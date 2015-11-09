@@ -384,7 +384,8 @@ module Viewpoint::EWS::Types
         u[:attendee][:elems].collect do |a|
           return a[:response_type] if a[:response_type]
           return a[:last_response_time] if a[:last_response_time]
-          # return build_mailbox_user(a[:mailbox][:elems]) if a[:mailbox]
+          # build_mailbox_user(a[:mailbox][:elems]) if a[:mailbox]
+          [build_mailbox_user(a[:mailbox][:elems])] << a
         end
       end.flatten.compact
     end
