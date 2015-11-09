@@ -39,7 +39,8 @@ module Viewpoint::EWS::Types
       optional_attendees: :build_attendees_users,
       required_attendees: :build_attendees_users,
       deleted_occurrences: :build_deleted_occurrences,
-      modified_occurrences: :build_modified_occurrences
+      modified_occurrences: :build_modified_occurrences,
+      response: :build_meeting_response
     }
     CALENDAR_ITEM_KEY_ALIAS = {}
 
