@@ -394,7 +394,7 @@ module Viewpoint::EWS::Types
         u[:attendee][:elems].collect do |a|
           a
         end
-      end.flatten.compact.response_type
+      end.flatten.compact
     end
 
     def build_attachments(attachments)
