@@ -382,10 +382,11 @@ module Viewpoint::EWS::Types
       return [] if users.nil?
       users.collect do |u|
         u[:attendee][:elems].collect do |a|
-          rtype=a[:response_type]
-          rtime=a[:last_response_time]
-          mbox=build_mailbox_user(a[:mailbox][:elems]) if a[:mailbox]
-          {mailbox: mbox, response_type: rtype, response_time: rtime}
+          # rtype=a[:response_type]
+          # rtime=a[:last_response_time]
+          # mbox=build_mailbox_user(a[:mailbox][:elems]) if a[:mailbox]
+          # {mailbox: mbox, response_type: rtype, response_time: rtime}
+          a
         end
       end.flatten.compact
     end
