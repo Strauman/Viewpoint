@@ -9,7 +9,7 @@ module Viewpoint::EWS::Types
       recurring?:   [:is_recurring, :text],
       meeting?:     [:is_meeting, :text],
       cancelled?:   [:is_cancelled, :text],
-      sentRequest?: [:meeting_request_was_sent, :text]
+      sentRequest?: [:meeting_request_was_sent, :text],
       duration:     [:duration, :text],
       time_zone:    [:time_zone, :text],
       start:        [:start, :text],
