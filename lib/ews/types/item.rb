@@ -385,7 +385,7 @@ module Viewpoint::EWS::Types
           a[:response_type][:text] if a[:response_type]
           #  if a[:response_type]
           # a[:last_response_time] if a[:last_response_time]
-          # build_mailbox_user(a[:mailbox][:elems]) if a[:mailbox]
+          build_mailbox_user(a[:mailbox][:elems]) if a[:mailbox]
         end
       end.flatten.compact
     end
