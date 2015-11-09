@@ -383,6 +383,7 @@ module Viewpoint::EWS::Types
       users.collect do |u|
         u[:attendee][:elems].collect do |a|
           # build_mailbox_user(a[:mailbox][:elems]) if a[:mailbox]
+          a
         end
       end.flatten.compact
     end
