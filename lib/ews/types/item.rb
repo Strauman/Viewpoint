@@ -392,9 +392,9 @@ module Viewpoint::EWS::Types
       return [] if users.nil?
       users.collect do |u|
         u[:attendee][:elems].collect do |a|
-          a[:response_type]
+          a
         end
-      end.flatten.compact
+      end.flatten.compact.response_type
     end
 
     def build_attachments(attachments)
