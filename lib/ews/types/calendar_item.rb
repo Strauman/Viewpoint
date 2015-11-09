@@ -16,7 +16,7 @@ module Viewpoint::EWS::Types
       end:          [:end, :text],
       location:     [:location, :text],
       state:        [:appointment_state, :text],
-      response_type:     [:text],
+      response_type:[:text],
       all_day?:     [:is_all_day_event, :text],
       legacy_free_busy_status: [:legacy_free_busy_status, :text],
       my_response_type:   [:my_response_type, :text],

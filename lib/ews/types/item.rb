@@ -392,7 +392,7 @@ module Viewpoint::EWS::Types
       return [] if users.nil?
       users.collect do |u|
         u[:attendee][:elems].collect do |a|
-          return a[:response_type] if a[:response_type]
+          a
         end
       end.flatten.compact
     end
